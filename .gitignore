@@ -35,4 +35,6 @@ hugo.linux
 .history
 .ionide
 
+*.deb
+
 # End of https://www.toptal.com/developers/gitignore/api/hugo,visualstudiocode
