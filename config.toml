@@ -3,11 +3,17 @@ themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "Peaksight Information Security"
+enableRobotsTXT = true
 
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.55.0"
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [params]
   # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
@@ -16,13 +22,15 @@ title = "Peaksight Information Security"
 
   [params.homepage]
     show_contact_box = true      # show / hide the contaxt box on the homepage
-    show_services_button = false # show / hide the "view all services" button
+    show_services_button = true # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/Peaksight2.png"
+    mobile = "images/logo/peaksight_logo.png"
     mobile_height = "40px"
-    desktop = "images/logo/Peaksight2.png"
+    mobile_width = "143px"
+    desktop = "images/logo/peaksight_logo.png"
     desktop_height = "50px"
+    desktop_width = "180px"
     alt = "Peaksight Information Security"
 
   [params.fonts]
@@ -39,9 +47,11 @@ title = "Peaksight Information Security"
     grey = "#5C5A5A"
 
   [params.seo]
+    meta_og_name = "Peaksight Information Security"
+    meta_og_description = "Providing expert security services and consultation to businesses"
     meta_twitter_site = ""
     meta_twitter_creator = ""
-    meta_og_image = ""
+    meta_og_image = "https://peaksight.co/images/logo/peaksight_logo.png"
 
   [params.services]
     summary_truncate = 120 # How many characters to include in the summary of the services before truncating
@@ -50,7 +60,7 @@ title = "Peaksight Information Security"
     summary_large_truncate = 150 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = 'Designed with Hugo & <a class="zerostatic" href="https://www.zerostatic.io">zerostatic.io</a>'
+    copyright_text = 'Peaksight Information Security | Built using Hugo & zerostatic.io'
 
 [menu]
   # Main Menu
