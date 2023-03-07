@@ -3,7 +3,7 @@ themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "Peaksight Information Security"
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 [module]
   [module.hugoVersion]
